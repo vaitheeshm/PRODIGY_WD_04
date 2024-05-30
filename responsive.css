@@ -1,0 +1,258 @@
+/* ----------------------LAPTOP/PC VIEW ---------------------- */
+
+@media screen and (max-width:1025px) {
+    #exit{
+        font-size: 40px;
+        color: gold;
+        position: absolute;
+        opacity: 1;
+        left: 850px;
+        top: 2390px;
+        z-index: 3;
+        display: none;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+
+/* ----------------------TABLET VIEW ---------------------- */
+
+
+@media screen and (max-width:770px) {
+    body {
+        overflow-x: hidden;
+    }
+    #exit{
+        font-size: 40px;
+        color: gold;
+        position: absolute;
+        opacity: 1;
+        left: 600px;
+        top: 2390px;
+        z-index: 3;
+        display: none;
+    }
+    /* --------------NAV BAR-------------- */
+    .show_menu {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0px;
+    }
+
+    nav ul {
+        display: block;
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav div {
+        align-self: flex-start;
+    }
+
+    .menu-line .line {
+        display: block;
+    }
+
+    /* -------------------------------------- */
+
+    /* ---------- Landing Page ------------- */
+
+    .landing_page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing_page img {
+        width: 300px;
+    }
+
+
+    .landing_page .desc_1 {
+        margin-top: 25px;
+    }
+
+    .landing_page .desc {
+        margin: 0 25px;
+    }
+
+    /* -------------------------------------- */
+    .main-timeline .timeline .timeline-icon {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+    }
+
+    .main-timeline .timeline .content .title {
+        font: tahoma;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .main-timeline .timeline .content .description {
+        font-family: "Poetsen One";
+        font-size: 14px;
+    }
+
+    /* -------------- My Project --------------- */
+    .projects .card_container {
+        /* display: flex;
+        flex-direction: column; */
+        margin: 10% 10%;
+    }
+
+    /* -------------------------------------- */
+
+    /* ---------- Footer------------- */
+    footer {
+        /* padding: 0 10px; */
+        text-align: left;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    footer .colab {
+        width: 100%;
+    }
+
+    /* -------------------------------------- */
+
+    /* ------------Project full Details---------------- */
+
+    .main_section {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .main_section .section_1 {
+        border-right: none;
+        border-bottom: 5px solid goldenrod;
+        height: fit-content;
+        padding-bottom: 60px;
+    }
+
+    .main_section .section_2 img {
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .section_1 ul {
+        width: 90%;
+    }
+
+}
+
+/* ------------------------------------------------------ */
+
+
+/* ----------------------MOBILE VIEW ---------------------- */
+
+@media screen and (max-width:479px) {
+    body {
+        overflow-x: hidden;
+    }
+    #exit{
+        font-size: 40px;
+        color: gold;
+        position: absolute;
+        opacity: 1;
+        left: 380px;
+        top: 2390px;
+        z-index: 3;
+        display: none;
+    }
+
+    .main_section {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+
+    }
+
+    /* --------------NAV BAR-------------- */
+
+    /* -------------------------------------- */
+
+
+    /* .landing_page img{
+    width: 200px;
+    height: 200px;
+  }   */
+
+
+
+    .main-timeline .timeline .timeline-icon {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+    }
+
+    .main-timeline .timeline .content .title {
+        font: tahoma;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .main-timeline .timeline .content .description {
+        font-family: "Poetsen One";
+        font-size: 12px;
+    }
+
+    .projects .card_container {
+        /* flex-direction: column; */
+    }
+
+    .inner_box_1,
+    .inner_box_2,
+    .inner_box_3 {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .main_section .section_1 {
+        border-right: none;
+        border-bottom: 5px solid goldenrod;
+        height: fit-content;
+        padding-bottom: 60px;
+    }
+
+    .main_section .section_2 img {
+        margin-top: 50px;
+        height: 150px;
+    }
+
+    .section_1 ul {
+        width: 90%;
+    }
+
+    .main_section .section_2 p,
+    h4 {
+        font-size: 14px;
+    }
+
+}
+
+/* ------------------------------------------------------ */
+
+
+/* ------------------------------------------------------ */

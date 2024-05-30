@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+:root {
+    --main_color: #34417b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: var(--main_color); */
+    font-family: "Poetsen One", sans-serif;
+    width: 100%;
+}
+
+/* ---------------------Nav Bar------------------------ */
+.show_menu{
+    display: block;
+}
+.chg_color{
+    background-color: rgba(0, 0, 0, 0.768);
+}
+
+nav {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    background-color: var(--main_color);
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+nav ul {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+nav div {
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav div .portfolio {
+    color: gold;
+}
+
+.menu-line .line{
+    height: 4px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 3px;
+    border-radius: 30px;
+    margin-right: 30px;
+
+    display: none;
+}
+
+.menu-line{
+    cursor: pointer;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 15px;
+}
+/* ------------------------------------------------------ */
+
+
+/* -------------------Landing page---------------------- */
+
+.landing_page {
+    background-color: var(--main_color);
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--main_color);
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.landing_page .desc {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.landing_page .desc_1 {
+    margin-top: 120px;
+    color: white;
+}
+
+.landing_page .desc_2,
+.desc_3,
+.desc_4 {
+    color: white;
+}
+
+.landing_page .desc_2,
+.desc_3 {
+    margin-top: 5px;
+    color: gold;
+}
+
+.landing_page .desc_4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.landing_page .desc button {
+    padding: 10px 20px;
+    font-family: "Poetsen One";
+    color: black;
+    background-color: gold;
+    border-radius: 8px;
+    border: 2px black solid;
+    cursor: pointer;
+}
+
+.landing_page .desc button i {
+    margin-right: 5px;
+}
+
+/* -------------------SKILLS ----------------------------- */
+
+.skills {
+    margin: 0 15%;
+    margin-bottom: 100px;
+}
+
+.main-timeline {
+    font-family: tahoma;
+    padding: 10px 0;
+    position: relative;
+    padding-top: 5px;
+    margin-top: 50px;
+}
+
+
+
+
+.main-timeline .timeline {
+    padding: 35px 0;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+ 
+.main-timeline .timeline .timeline-icon{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.main-timeline .timeline .content .title{
+    font: tahoma;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.main-timeline .timeline .content .description{
+    font-family: "Poetsen One";
+    font-size: 16px;
+}
+
+
+
+/* ------------------------------------------------------ */
+
+/* -------------------MY Recent Projects---------------------- */
+.projects {
+    height:100%;
+    margin-top: 100px;
+}
+
+.projects .card_container {
+    margin: 0 8%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    height: fit-content;
+    margin-top: 50px;
+}
+
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border-radius: 12px;
+    width: 300px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.projects .card_container .image_container{
+    height: 180px;
+    width: 300px;
+    position: relative;
+}
+.projects .card_container .desc_of_container{
+    height: 150px;
+    width: 300px;
+    position: relative;
+    background-color:var(--main_color);
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    text-align: left;
+    font-family: "Poetsen One";
+}
+.projects .card_container .image_container img {
+    height: 180px;
+    width: 300px;
+    border-radius: 12px;
+}
+
+
+.card_container .desc_of_container .bx{
+    height: 50px;
+    width: 130px;
+    background-color:var(--main_color);
+    position: absolute;
+    right: 170px;
+    bottom: 150px;
+    border-top: 8px solid white;
+    border-right: 8px solid white;
+    border-top-right-radius: 20px;
+}
+.card_container .desc_of_container button{
+    padding: 10px 20px;
+    font-family: "Poetsen One";
+    color: black;
+    background-color: rgb(255, 242, 167);
+    border-radius: 8px;
+    border: 2px black solid;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    /* top: 15px; */
+}
+.card_container .desc_of_container p{
+    margin: 10px 10px;
+}
+.card_container .desc_of_container h2{
+    margin-top: 10px;
+}
+/* ------------------------------------------------------ */
+
+/* -------------------------Footer------------------------ */
+footer {
+    background-color: var(--main_color);
+    padding: 0 50px;
+    margin-top: 100px;
+}
+
+footer .contact_me {
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+footer .contact_me .contact_me_contact {
+    color: white;
+}
+
+footer .contact_me .contact_me_me {
+    color: gold;
+    padding-left: 10px;
+}
+
+footer .contact_me_content {
+    margin-top: 35px;
+    color: white;
+    /* font-style: italic; */
+    letter-spacing: 1.5px;
+}
+
+footer .colab {
+    /* padding-right: 500px; */
+    font-family: "Poetsen One";
+    width: 50%;
+    text-align: left;
+    margin-top: 15px;
+    color: white;
+    font-weight: 200;
+}
+
+footer .social_media i {
+    font-size: 30px;
+}
+
+footer .social_media {
+    display: flex;
+}
+
+footer .social_media div {
+    margin: 40px 15px;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------ */
+
+
+
+/* ---------------------- Project full detail container---------------------- */
+
+#exit{
+    font-size: 40px;
+    color: gold;
+    position: absolute;
+    opacity: 1;
+    left: 1100px;
+    top: 2390px;
+    z-index: 3;
+    display: none;
+}
+.box{
+background-color: black ;
+opacity: 0.7;
+height: 140%;
+width: 100%;
+position: absolute;
+z-index: 1;
+top: 2200px;
+display: none;
+}
+
+.inner_box_1,.inner_box_2,.inner_box_3{
+background-color: white;
+box-shadow: 0 0 10px rgb(255, 243, 178);
+font-family: poppins;
+color: var(--main_color);
+height: fit-content;
+/* width: 700px; */
+margin: 0 15%;
+padding: 40px;
+border-radius: 10px;
+position: absolute;
+z-index: 2;
+top:2380px;
+display:none;
+}
+
+.main_section{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    /* margin: 0 25%; */
+    /* width: 50%; */
+    
+}
+.main_section .section_1{
+    flex-basis: 35%;
+    border-right: 5px solid goldenrod;
+    padding-right: 40px;
+}
+.section_1 ul{
+    /* width: 50%; */
+    margin-top: 10px;
+}
+
+
+.main_section .section_2 img{
+    width:250px;
+    /* width: 100%; */  
+}
+
+
+.main_section .section_2{
+    margin-left: 60px;
+    /* flex-basis: 65%; */
+    height: fit-content;
+}
+
+.main_section .section_2 p,h4{
+    font-size: 20px;
+}
+/* ------------------------------------------------------ */
